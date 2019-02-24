@@ -1,3 +1,4 @@
+/* Universal CSS */
 
 .image-content {
   display: flex;
@@ -5,14 +6,26 @@
   font-weight: bold;
   font-size: 30px;
   color: white;
-  text-align: center;
+  text-align: left;
   height: 300px;
 }
 
-.text-content {
+.text-content p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 /* Header & Navigation */
@@ -28,6 +41,7 @@ header {
   font-weight: bold;
   position: fixed;
   z-index: 1;
+  background-color: white;
 }
 
 .logo {
@@ -51,11 +65,14 @@ header nav {
   padding-right: 40px;
 }
 
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
 /* Content */
 
-div {
-  border: 1px solid black;
-}
+
 
 .main_content {
   display: flex;
@@ -84,6 +101,23 @@ div {
   width: 630px;
   height: 300px;
   font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.earth {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+  width: 630px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.camera {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+  width: 630px;
+  align-items: center;
   justify-content: center;
   text-align: left;
 }
@@ -95,8 +129,78 @@ div {
   width: 300px;
 }
 
+.cats {
+  display: flex;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
+  width: 300px;
+}
+
 /* Small Column */
 
 .small.column {
   width: 240px;
+  flex-direction: column;
+}
+
+img {
+  width: 240px;
+  height: 240px;
+}
+
+
+.news-bites h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.news-bites span {
+ display: flex;
+ height: 40px;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ background-color: WhiteSmoke;
+ font-family: Verdana;
+ font-size: 12px;
+ color: DimGray;
+ margin: 0;
+ border-bottom: 1px solid black;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  height: 400px;
+  width: 100%;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer h4 {
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 25px
+}
+
+.footnav span {
+  display: inline-block;
+  padding-left: 25px;
+  word-spacing: 10px;
+}
+
+.copy {
+  position: relative;
+  bottom: 150px;
+  left: 475px;
+  font-family: Verdana;
+  font-size: 12px;
 }
